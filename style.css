@@ -1,0 +1,39 @@
+body{
+    background: #101010;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url("https://www.highreshdwallpapers.com/wp-content/uploads/2015/01/Stairway-to-a-Garden-of-Nature.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ball{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: radial-gradient(white,red,pink);
+}
+.bounce{
+    animation: bounce 3.14s linear 0s infinite alternate;
+}
+.bounceA{
+    animation: bounceA 1.03s ease-in 0s infinite alternate;
+}
+@keyframes bounce{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(Calc(100vw - 10vmin));
+    }
+}
+@keyframes bounceA{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(Calc(100vh - 10vmin));
+    }
+}
